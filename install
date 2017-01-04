@@ -4,6 +4,6 @@ echo "Installing NeoVim init file to '~/.config/nvim/init.vim'"
 cp -f .nvimrc ~/.config/nvim/init.vim
 
 echo "Installing Tmux conf file to '~/.tmux.conf'"
-cp -f .nvimrc ~/.tmux.conf
+cp -f .tmux.conf ~/.tmux.conf
 
 
