@@ -17,6 +17,7 @@ nnoremap <Leader>o :FZF<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>f :CtrlPMRUFiles<CR>
 nnoremap <C-L> :nohlsearch<CR><C-L>
+nnoremap <Leader><Tab> <C-W>w<CR>
 
 " Numbers
 set relativenumber
