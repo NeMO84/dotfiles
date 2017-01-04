@@ -10,19 +10,16 @@ endif
 let mapleader = "\<Space>"
 
 " Custom Maps
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
 nnoremap / :Commentary<CR>
 vnoremap / :Commentary<CR>
 nnoremap <Leader>k :NERDTreeToggle<CR>
 nnoremap <Leader>o :FZF<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>f :CtrlPMRUFiles<CR>
+nnoremap <C-L> :nohlsearch<CR><C-L>
 
-" Number
-set number
+" Numbers
+set relativenumber
 
 " SplitPane
 set splitbelow
