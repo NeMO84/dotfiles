@@ -27,7 +27,7 @@ set splitbelow
 set splitright
 
 " Tabs
-setlocal noexpandtab
+setlocal expandtab
 setlocal shiftround
 setlocal autoindent
 let s:tabwidth=2
