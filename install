@@ -1,9 +1,16 @@
 #!/bin/bash
 
 echo "Installing NeoVim init file to '~/.config/nvim/init.vim'"
-cp -f .nvimrc ~/.config/nvim/init.vim
+cp -i .nvimrc ~/.config/nvim/init.vim
 
 echo "Installing Tmux conf file to '~/.tmux.conf'"
-cp -f .tmux.conf ~/.tmux.conf
+cp -i .tmux.conf ~/.tmux.conf
 
-
+if [[ -d ~/.tmux/plugins/tpm ]]; then
+  echo "Updating tmux-plugins/tmux"
+  git -C ~/.tmux/plugins/tpm pull 
+else
+  echo "Installing tmux-plugins/tmux -> ~/.tmux/plugins/tpm"
+  mkdir -p ~/.tmux/plugins
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi

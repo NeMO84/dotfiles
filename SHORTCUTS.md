@@ -28,18 +28,19 @@ In tmux, hit the prefix `ctrl+b` (my modified prefix is ctrl+j) and then:
 
 ## Sessions
 
-    :new<CR>  new session
-    $  name session
+    r         reload ~/.tmux.conf 
+    :new<CR>  create session
+    $         rename session
 
 ## Windows (tabs)
 
-    c  create window
-    w  list windows
-    n  next window
-    p  previous window
-    f  find window
-    ,  rename window
-    &  kill window
+    c   create window
+    w   list windows
+    n   next window
+    p   previous window
+    f   find window
+    ,   rename window
+    &   kill window
 
 ## Panes (splits) 
 
@@ -53,9 +54,9 @@ In tmux, hit the prefix `ctrl+b` (my modified prefix is ctrl+j) and then:
     l   move to right pane
     q   show pane numbers
     q # show pane numbers and move to pane #
-    <prefix> { (Move the current pane left)
-    <prefix> } (Move the current pane right)
-    <prefix> z toggle pane zoom 
+    {   move the current pane left
+    }   move the current pane right
+    z   toggle pane zoom 
 
 ## Resizing Panes
 
@@ -79,3 +80,31 @@ You can also resize panes if you don’t like the layout defaults. I personally 
     ?  list shortcuts
     :  prompt
 
+## Plugin Specific
+
+[Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+
+    I       instal tmux plugins 
+    U       update tmux plugins 
+    Alt+u   uninstalls/removes tmux plugins 
+
+[Resurrect](https://github.com/tmux-plugins/tmux-resurrect)
+
+    <C-s>   save tmux session
+    <C-r>   restore tmux session
+
+[Sessionist](https://github.com/tmux-plugins/tmux-sessionist)
+
+    g   switch sessions 
+    C   create new sessions 
+    X   kill current session sessions 
+    S   switch to last sessions
+    @   promote current pane into new sessions
+
+
+
+
+
+
+
+    
