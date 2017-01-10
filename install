@@ -1,7 +1,14 @@
 #!/bin/bash
 
 echo "Installing NeoVim init file to '~/.config/nvim/init.vim'"
+mkdir -p ~/.config/nvim
 cp -i .nvimrc ~/.config/nvim/init.vim
+if [[ -d ~/.local/share/nvim/site/autoload/ ]]; then
+  echo "Plug already installed"
+else
+  curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
 
 echo "Installing Tmux conf file to '~/.tmux.conf'"
 cp -i .tmux.conf ~/.tmux.conf
