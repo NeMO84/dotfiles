@@ -100,11 +100,3 @@ You can also resize panes if you don’t like the layout defaults. I personally 
     X   kill current session sessions 
     S   switch to last sessions
     @   promote current pane into new sessions
-
-
-
-
-
-
-
-    
