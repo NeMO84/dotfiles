@@ -44,14 +44,14 @@ In tmux, hit the prefix `ctrl+b` (my modified prefix is ctrl+j) and then:
 
 ## Panes (splits) 
 
-    |   vertical split
-    \-  horizontal split
+    \   vertical split
+    -  horizontal split
     o   switch panes
     x   kill pane
-    h   move to left pane
-    j   move to down pane
-    k   move to up pane
-    l   move to right pane
+    h   switch to left pane
+    j   switch to down pane
+    k   switch to up pane
+    l   switch to right pane
     q   show pane numbers
     q # show pane numbers and move to pane #
     {   move the current pane left
@@ -62,6 +62,10 @@ In tmux, hit the prefix `ctrl+b` (my modified prefix is ctrl+j) and then:
 
 You can also resize panes if you don’t like the layout defaults. I personally rarely need to do this, though it’s handy to know how. Here is the basic syntax to resize panes:
 
+    <   resize-pane left 2
+    ^d   resize-pane down 2
+    ^u   resize-pane up 2
+    >   resize-pane right 2
     : resize-pane -D (Resizes the current pane down)
     : resize-pane -U (Resizes the current pane upward)
     : resize-pane -L (Resizes the current pane left)
