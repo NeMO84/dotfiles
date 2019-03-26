@@ -49,6 +49,16 @@ let &l:tabstop = s:tabwidth
 let &l:shiftwidth = s:tabwidth
 let &l:softtabstop = s:tabwidth
 
+" hidden/special characters
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.
+nnoremap <Leader>i :set list! list?<cr>
+
+" functionality
+set mouse=a
+
+" Plug specific
+let g:go_fmt_command = "goimports"
+
 " plugins
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
@@ -65,5 +75,6 @@ Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
