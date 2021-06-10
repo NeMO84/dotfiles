@@ -20,7 +20,7 @@ if [ -f $zshrc ]; then
 	echo "$zshrc is already installed"
 else
 	echo "Installing zshrc file: $zshrc"
-	cp .zshrc $zshrc
+	cp zshell/.zshrc $zshrc
 fi
 
 theme=~/.oh-my-zsh/custom/themes/nemonster.zsh-theme
@@ -29,5 +29,5 @@ if [ -f $theme ]; then
 else
 	echo "Installing custom oh-my-zsh theme: $theme"
 	mkdir -p ~/.oh-my-zsh/custom/themes
-	cp nemonster.zsh-theme $theme
+	cp zshell/nemonster.zsh-theme $theme
 fi
